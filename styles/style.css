@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+    font-family: delicias;
+    src: url(/assets/fontes/stars-love-regular.ttf);
+}
+
+body{
+}
+h1{
+    font-family: delicias;
+    text-shadow: 2px 2px 2px palevioletred;
+    opacity: none;
+}

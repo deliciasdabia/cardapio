@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Peça deliciosas empadas e bebidas no Delícias da Bia">
+    
+    <!-- Política de Segurança de Conteúdo (CSP) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' cdnjs.cloudflare.com; img-src 'self' data:;">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />  
+        
+    <link rel="stylesheet" href="./styles/output.css">
+    <link rel="shortcut icon" href="assets/logo-icon.ico" type="image/x-icon">
+    <title>Peça no Delícias da Bia!</title>
+</head>
+<body>
+    <!--- HEADER -->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img
+                src="./assets/logo.jpg"
+                alt="Delicias da Bia"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+            />
+
+            <h1 class="text-3xl mt-4 mb-2 font-thin text-white text-center">
+                Delícias da Bia
+            </h1>
+
+            <span class="bg-pink-600 rounded-lg shadow-lg py-1 px-4 text-white font-medium">Rua São Marcos, 20 / Nova República - Natal/RN
+            </span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-4" id="date-span">
+                <span class="text-white font-medium">Abertos de Seg a Dom - das 18:00 às 22:00</span>
+            </div>
+        </div>
+    </header>
+    <!--- FIM DO HEADER -->
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Conheça nosso menu:
+    </h2>
+
+    <!-- INÍCIO MENU-->
+     <div>
+
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+        <!--- produto item 1 -->
+        <div class="flex gap-2">
+            <img
+                src="./assets/mini-emp-doce.jpeg"
+                alt="Mini Empada Doce"
+                class=" w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+            <div class="w-full">
+                <p class="font-bold">Mini Empadinha Doce (8 und.)</p>
+                <p class="text-sm">Irresistível empadinha de doce de leite.</p>
+                <div class="flex items-centergap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 5.00</p>
+                    <button
+                        class="bg-gray-900 px-5 rounded add-to-cart-btm hover:scale-110 hover:-rotate-2"
+                        data-name="Empadinha Doce"
+                        data-price="5.00"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>  
+        
+        <!--- fim do produto 1 -->
+
+        <!--- produto item 2 -->
+        <div class="flex gap-2">
+            <img
+                src="./assets/emp-doce.jpeg"
+                alt="Empada Doce Media"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+            <div class="w-full">
+                <p class="font-bold">Empada Doce Média (4 und.)</p>
+                <p class="text-sm">A irresistível empadinha de doce de leite, só que maior e com mais recheio.</p>
+                <div class="flex items-centergap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 7.50</p>
+                    <button
+                        class="bg-gray-900 px-5 rounded add-to-cart-btm hover:scale-110 hover:-rotate-2"
+                        data-name="Empada Doce Media"
+                        data-price="7.50"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>  
+        
+        <!--- fim do produto 2 -->
+
+        <!--- produto item 3 -->
+
+        <div class="flex gap-2">
+            <img
+                src="./assets/mini-emp-frango.jpeg"
+                alt="Empadinha Frango"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+            <div class="w-full">
+                <p class="font-bold">Mini Empadinha de Frango (8 und.)</p>
+                <p class="text-sm">Deliciosas empadinhas com recheio de frango de dar água na boca.</p>
+                <div class="flex items-centergap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 10.00</p>
+                    <button
+                        class="bg-gray-900 px-5 rounded add-to-cart-btm hover:scale-110 hover:-rotate-2"
+                        data-name="Empadinha Frango"
+                        data-price="10.00"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>  
+        
+        <!--- fim do produto 3 -->
+
+        <!--- produto item 4 -->
+        <div class="flex gap-2">
+            <img
+                src="./assets/empadao.jpeg"
+                alt="Mini Empadao"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+            <div class="w-full">
+                <p class="font-bold">Mini Empadão de Frango (200g)</p>
+                <p class="text-sm">Massa super macia e recheio de frango suculento.</p>
+                <div class="flex items-centergap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 10.00</p>
+                    <button
+                        class="bg-gray-900 px-5 rounded add-to-cart-btm hover:scale-110 hover:-rotate-2"
+                        data-name="Mini Empadao"
+                        data-price="10.00"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>  
+        
+        <!--- fim do produto 4 -->
+        </main>
+    <div class="mx-auto max-w-7xl px-2 my-2">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+            Bebidas
+        </h2>
+    </div>
+    <!--- BEBIDAS --->
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+        <!--- produto bebida 1 -->
+        <div class="flex gap-2 w-full">
+            <img
+                src="./assets/refri-1.png"
+                alt="Pepsi"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+            <div class="w-full">
+                <p class="font-bold">Pepsi 350ml</p>
+                <div class="flex items-centergap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 5.00</p>
+                    <button
+                        class="bg-gray-900 px-5 rounded add-to-cart-btm hover:scale-110 hover:-rotate-2"
+                        data-name="Pepsi"
+                        data-price="5.00"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>  
+        
+        <!--- fim bebida 1 -->
+
+        <!--- produto bebida 2 -->
+        <div class="flex gap-2 w-full">
+            <img
+                src="./assets/refri-2.png"
+                alt="Guaraná Antartica"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+            <div class="w-full">
+                <p class="font-bold">Guaraná Antartica 350ml</p>
+                <div class="flex items-centergap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 5.00</p>
+                    <button
+                        class="bg-gray-900 px-5 rounded add-to-cart-btm hover:scale-110 hover:-rotate-2"
+                        data-name="Guarana Antartica"
+                        data-price="5.00"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>  
+        
+        <!--- fim bebida 2 -->
+
+    </div>
+    <!--- fim BEBIDAS --->
+
+     </div>
+    <!-- INÍCIO MENU-->
+
+
+
+    
+</body>
+</html>
